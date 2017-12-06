@@ -49,91 +49,93 @@
           <li class="current">Средства для ухода</li>
         </ul>
       </header>
-      <aside class="column-left">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filters" action="#" method="post">
-          <div class="producer">
-            <label class="filter-label">Производители:</label>
-            <p>
-              <input type="checkbox" name="baxterofcalifornia-producer" id="baxterofcalifornia" checked>
-              <label for="baxterofcalifornia">Baxter of California</label>
-            </p>
-            <p>
-              <input type="checkbox" name="mrnatty-producer" id="mrnatty">
-              <label for="mrnatty">Mr Natty</label>
-            </p>
-            <p>
-              <input type="checkbox" name="suavecito-producer" id="suavecito" checked>
-              <label for="suavecitoa">Suavecito</label>
-            </p>
-            <p>
-              <input type="checkbox" name="malingoetz-producer" id="malingoetz">
-              <label for="malingoetz">Malin+Goetz</label>
-            </p>
-            <p>
-              <input type="checkbox" name="murrays-producer" id="murrays">
-              <label for="murrays">Murray's</label>
-            </p>
-            <p>
-              <input type="checkbox" name="americancrew-producer" id="americancrew" checked>
-              <label for="americancrew">American crew</label>
-            </p>
+      <div class="catalog-flex-wrapper">
+        <aside class="column-left">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form class="filters" action="#" method="post">
+            <div class="producer">
+              <label class="filter-label">Производители:</label>
+              <p>
+                <input type="checkbox" name="baxterofcalifornia-producer" id="baxterofcalifornia" checked>
+                <label for="baxterofcalifornia">Baxter of California</label>
+              </p>
+              <p>
+                <input type="checkbox" name="mrnatty-producer" id="mrnatty">
+                <label for="mrnatty">Mr Natty</label>
+              </p>
+              <p>
+                <input type="checkbox" name="suavecito-producer" id="suavecito" checked>
+                <label for="suavecitoa">Suavecito</label>
+              </p>
+              <p>
+                <input type="checkbox" name="malingoetz-producer" id="malingoetz">
+                <label for="malingoetz">Malin+Goetz</label>
+              </p>
+              <p>
+                <input type="checkbox" name="murrays-producer" id="murrays">
+                <label for="murrays">Murray's</label>
+              </p>
+              <p>
+                <input type="checkbox" name="americancrew-producer" id="americancrew" checked>
+                <label for="americancrew">American crew</label>
+              </p>
+            </div>
+            <div class="goods-groups">
+              <label class="filter-label">Группы товаров:</label>
+              <p>
+                <input type="radio" name="goodsgroups" id="shaving" value="Бритвенные пренадлежности">
+                <label for="shaving">Бритвенные пренадлежности</label>
+              </p>
+              <p>
+                <input type="radio" name="goodsgroups" id="skincare" value="Средства для ухода" checked>
+                <label for="skincare">Средства для ухода</label>
+              </p>
+              <p>
+                <input type="radio" name="goodsgroups" id="accessories" value="Аксессуары">
+                <label for="accessories">Аксессуары</label>
+              </p>
+            </div>
+            <button type="submit" name="show" aria-label="Показать">Показать</button>
+          </form>
+        </aside>
+        <section class="main-content">
+          <h2 class="visually-hidden">Список товаров</h2>
+          <div class="catalog-item">
+            <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-1.png" width="220px" height="165px" alt="Набор для путешествий"></a>
+            <a href="#" aria-label="Перейти на страницу товара"><h3>Набор для путешествий "BAXTER OF CALIFORNIA"</h3></a>
+            <b>2900 РУБ.</b>
+            <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
           </div>
-          <div class="goods-groups">
-            <label for="filter-label">Группы товаров:</label>
-            <p>
-              <input type="radio" name="goodsgroups" id="shaving" value="Бритвенные пренадлежности">
-              <label for="shaving">Бритвенные пренадлежности</label>
-            </p>
-            <p>
-              <input type="radio" name="goodsgroups" id="skincare" value="Средства для ухода" checked>
-              <label for="skincare">Средства для ухода</label>
-            </p>
-            <p>
-              <input type="radio" name="goodsgroups" id="accessories" value="Аксессуары">
-              <label for="accessories">Аксессуары</label>
-            </p>
+          <div class="catalog-item">
+            <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-2.png" width="220px" height="165px" alt="Кондиционер"></a>
+            <a href="#" aria-label="Перейти на страницу товара"><h3>Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</h3></a>
+            <b>750 РУБ.</b>
+            <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
           </div>
-          <button type="submit" name="show" aria-label="Показать">Показать</button>
-        </form>
-      </aside>
-      <section class="main-content">
-        <h2 class="visually-hidden">Список товаров</h2>
-        <div class="catalog-item">
-          <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-1.png" width="220px" height="165px" alt="Набор для путешествий"></a>
-          <a href="#" aria-label="Перейти на страницу товара"><h3>Набор для путешествий "BAXTER OF CALIFORNIA"</h3></a>
-          <b>2900 РУБ.</b>
-          <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
-        </div>
-        <div class="catalog-item">
-          <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-2.png" width="220px" height="165px" alt="Кондиционер"></a>
-          <a href="#" aria-label="Перейти на страницу товара"><h3>Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</h3></a>
-          <b>750 РУБ.</b>
-          <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
-        </div>
-        <div class="catalog-item">
-          <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-3.png" width="220px" height="165px" alt="Гель для волос"></a>
-          <a href="#" aria-label="Перейти на страницу товара"><h3>Гель для волос "SUAVECITO"</h3></a>
-          <b>290 РУБ.</b>
-          <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
-        </div>
-        <div class="catalog-item">
-          <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-4.png" width="220px" height="165px" alt="Глина для укладки волос"></a>
-          <a href="#" aria-label="Перейти на страницу товара"><h3>Глина для укладки волос "AMERICAN CREW"</h3></a>
-          <b>500 РУБ.</b>
-          <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
-        </div>
-        <div class="catalog-item">
-          <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-5.png" width="220px" height="165px" alt="Гель для волос"></a>
-          <a href="#" aria-label="Перейти на страницу товара"><h3>Гель для волос "AMERICAN CREW"</h3></a>
-          <b>300 РУБ.</b>
-          <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
-        </div>
-        <div class="catalog-item">
-          <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-6.png" width="220px" height="165px" alt="Набор для бритья"></a>
-          <a href="#" aria-label="Перейти на страницу товара"><h3>Набор для бритья "BAXTER OF CALIFORNIA"</h3></a>
-          <b>3900 РУБ.</b>
-          <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
+          <div class="catalog-item">
+            <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-3.png" width="220px" height="165px" alt="Гель для волос"></a>
+            <a href="#" aria-label="Перейти на страницу товара"><h3>Гель для волос "SUAVECITO"</h3></a>
+            <b>290 РУБ.</b>
+            <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
+          </div>
+          <div class="catalog-item">
+            <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-4.png" width="220px" height="165px" alt="Глина для укладки волос"></a>
+            <a href="#" aria-label="Перейти на страницу товара"><h3>Глина для укладки волос "AMERICAN CREW"</h3></a>
+            <b>500 РУБ.</b>
+            <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
+          </div>
+          <div class="catalog-item">
+            <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-5.png" width="220px" height="165px" alt="Гель для волос"></a>
+            <a href="#" aria-label="Перейти на страницу товара"><h3>Гель для волос "AMERICAN CREW"</h3></a>
+            <b>300 РУБ.</b>
+            <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
+          </div>
+          <div class="catalog-item">
+            <a href="#" aria-label="Перейти на страницу товара"><img src="img/good-6.png" width="220px" height="165px" alt="Набор для бритья"></a>
+            <a href="#" aria-label="Перейти на страницу товара"><h3>Набор для бритья "BAXTER OF CALIFORNIA"</h3></a>
+            <b>3900 РУБ.</b>
+            <button name="buy" alt="Купить" aria-label="Добавить в корзину">Купить</button>
+          </div>
         </div>
         <div class="paginator">
           <a class="page" href="#1" aria-label="Страница 1">1</a>

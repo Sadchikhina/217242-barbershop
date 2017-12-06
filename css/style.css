@@ -35,6 +35,7 @@ body {
 .page-header {
   background-color: #000000;
   height: 70px;
+  margin-bottom: 53px;
 }
 
 .main-logo {
@@ -54,7 +55,6 @@ body {
   font-size: 16px;
   text-transform: uppercase;
 }
-
 
 .main-navigation a {
   text-decoration: none;
@@ -89,7 +89,7 @@ body {
 .catalog-header {
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 52px;
 }
 
 .catalog-header h1 {
@@ -97,7 +97,7 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  outline: 1px solid #000000;
+  margin-bottom: 23px;
 }
 
 .breadscrumbs {
@@ -109,7 +109,8 @@ body {
   margin-right: 40px;
 }
 
-.breadscrumbs a {
+.breadscrumbs a,
+.catalog-item a {
   text-decoration: none;
   color: #000000;
 }
@@ -117,4 +118,33 @@ body {
 .breadscrumbs .current {
   margin-right: 0;
   color: #aba9a7;
+}
+
+.catalog-flex-wrapper {
+  display: flex;
+}
+
+.column-left {
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+.filter-label {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 700px;
+  margin-top: 4px;
+}
+
+.catalog-item {
+  width: 220px;
+  height: 286px;
+  margin-bottom: 20px;
+  outline: 1px solid #000000;
 }
