@@ -125,13 +125,29 @@ body {
 }
 
 .column-left {
-  margin-right: 50px;
+  margin-right: 23px;
   text-transform: uppercase;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-label {
   font-size: 24px;
-  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.producer input[type="checkbox"],
+.goods-groups input[type="radio"] {
+  display: none;
+}
+
+.producer input[type="checkbox"] + label,
+.goods-groups input[type="radio"] + label {
+  box-sizing: border-box;
+  padding-left: 44px;
 }
 
 .main-content {
