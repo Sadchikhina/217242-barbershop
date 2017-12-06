@@ -1,5 +1,120 @@
 body {
-  min-width: 1000px;
+  min-width: 1200px;
   background-color: #ffffff;
   font-family: "PT Sans Narrow","Arial", sans-serif;
+  font-size: 14px;
+}
+
+.modal-login {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.cite-navigation,
+.user-navigation,
+.breadscrumbs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-main,
+.catalog-footer {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  background-color: #000000;
+  height: 70px;
+}
+
+.main-logo {
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+}
+
+.main-navigation {
+  box-sizing: border-box;
+  display: flex;
+  width: 900px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+.main-navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.cite-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 4px;
+}
+
+.cite-navigation li {
+  margin-right: 40px;
+}
+
+.cite-navigation li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.cite-navigation .active {
+  box-shadow: 0 4px 0 0 #ffffff;
+  padding-bottom: 23px;
+}
+
+.user-navigation {
+  margin-left: 212px;
+  padding-top: 4px;
+}
+
+.catalog-header {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.catalog-header h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid #000000;
+}
+
+.breadscrumbs {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.breadscrumbs li {
+  margin-right: 40px;
+}
+
+.breadscrumbs a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadscrumbs .current {
+  margin-right: 0;
+  color: #aba9a7;
 }
