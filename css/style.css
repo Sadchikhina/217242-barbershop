@@ -31,7 +31,16 @@ body {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
+}
 
+.filters button,
+.catalog-item button {
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: auto;
+  border: none;
 }
 
 .page-header {
@@ -141,6 +150,22 @@ body {
   margin-bottom: 18px;
 }
 
+.producer {
+  margin-bottom: 31px;
+}
+
+.producer p {
+  margin-bottom: 21px;
+}
+
+.goods-groups {
+  margin-bottom: 30px;
+}
+
+.goods-groups p {
+  margin-bottom: 22px;
+}
+
 .producer input[type="checkbox"],
 .goods-groups input[type="radio"] {
   display: none;
@@ -152,17 +177,46 @@ body {
   padding-left: 44px;
 }
 
+.filters button {
+  width: 112px;
+  height: 43px;
+  font-size: 13px;
+}
+
 .main-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 700px;
   margin-top: 4px;
+  margin-bottom: 26px;
 }
 
 .catalog-item {
   width: 220px;
   height: 286px;
   margin-bottom: 20px;
-  outline: 1px solid #000000;
+}
+
+.paginator {
+  margin-left: 240px;
+  display: flex;
+}
+
+.page {
+  box-sizing: border-box;
+  width: 43px;
+  height: 43px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  padding-top: 15px;
+  padding-left: 18px;
+  margin-right: 7px;
+}
+
+.disabled {
+  background-color: #ffffff;
+  color: #000000;
 }
