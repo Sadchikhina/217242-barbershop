@@ -233,8 +233,13 @@ body {
 .footer-flex-wrapper {
   display: flex;
   padding-top: 60px;
+  padding-bottom: 50px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.adress {
+  margin-right: 40px;
 }
 
 .adress span,
@@ -253,12 +258,18 @@ body {
   margin-top: 8px;
 }
 
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social-list {
   display: flex;
 }
 
 .social-list li {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .social-list a {
