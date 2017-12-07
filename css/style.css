@@ -20,14 +20,15 @@ body {
 
 .cite-navigation,
 .user-navigation,
-.breadscrumbs {
+.breadscrumbs,
+.social-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .catalog-main,
-.catalog-footer {
+.footer-flex-wrapper {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
@@ -95,6 +96,10 @@ body {
 .user-navigation {
   margin-left: 212px;
   padding-top: 4px;
+}
+
+.catalog-main {
+  margin-bottom: 49px;
 }
 
 .catalog-header {
@@ -219,4 +224,48 @@ body {
 .disabled {
   background-color: #ffffff;
   color: #000000;
+}
+
+.catalog-footer {
+  background-image: url("../img/background-footer.png");
+}
+
+.footer-flex-wrapper {
+  display: flex;
+  padding-top: 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.adress span,
+.adress p {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.adress a {
+  color: #ffffff;
+}
+
+.adress .phone {
+  margin-top: 8px;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list li {
+  margin-right: 10px;
+}
+
+.social-list a {
+  display: flex;
+  width: 43px;
+  height: 43px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
 }
