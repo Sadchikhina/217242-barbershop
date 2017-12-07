@@ -201,11 +201,25 @@ body {
   width: 220px;
   height: 286px;
   margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 17px 2px #d7d6d4;
+}
+
+.catalog-item img,
+.catalog-item a,
+.catalog-item h3 {
+  padding: 0;
+  margin: 0;
 }
 
 .paginator {
   margin-left: 240px;
   display: flex;
+}
+
+.item-name h3 {
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .page {
