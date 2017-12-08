@@ -169,7 +169,7 @@ body {
 }
 
 .column-left {
-  margin-right: 23px;
+  width: 240px;
   text-transform: uppercase;
 }
 
@@ -181,6 +181,17 @@ body {
 .filter-label {
   font-size: 24px;
   margin-bottom: 18px;
+}
+
+.producer input[type="checkbox"],
+.goods-groups input[type="radio"] {
+  display: none;
+}
+
+.producer input[type="checkbox"] + label,
+.goods-groups input[type="radio"] + label {
+  padding-left: 44px;
+  position: relative;
 }
 
 .producer {
@@ -210,7 +221,28 @@ body {
   height: 16px;
   top: 2px;
   left: 4px;
+}
 
+.goods-groups input[type="radio"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+
+.goods-groups input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 5px;
+  left: 6px;
 }
 
 .goods-groups {
@@ -221,15 +253,8 @@ body {
   margin-bottom: 22px;
 }
 
-.producer input[type="checkbox"],
-.goods-groups input[type="radio"] {
-  display: none;
-}
-
-.producer input[type="checkbox"] + label,
-.goods-groups input[type="radio"] + label {
+.align-left {
   padding-left: 44px;
-  position: relative;
 }
 
 .filters button {
