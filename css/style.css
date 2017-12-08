@@ -20,7 +20,7 @@ body {
 
 .cite-navigation,
 .user-navigation,
-.breadscrumbs,
+.breadscrumbs-menu,
 .social-list {
   list-style-type: none;
   padding: 0;
@@ -128,22 +128,39 @@ body {
   margin-bottom: 23px;
 }
 
-.breadscrumbs {
+.breadscrumbs-menu {
   display: flex;
   text-transform: uppercase;
 }
 
-.breadscrumbs li {
+.breadscrumbs-menu li {
   margin-right: 40px;
 }
 
-.breadscrumbs a,
+.breadscrumbs-menu a,
 .catalog-item a {
   text-decoration: none;
   color: #000000;
 }
 
-.breadscrumbs .current {
+.breadscrumbs {
+  position: relative;
+}
+
+.to-main::after,
+.to-shop::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #000000;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 5px;
+  left: 65px;
+
+}
+
+.breadscrumbs-menu .current {
   margin-right: 0;
   color: #aba9a7;
 }
