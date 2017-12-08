@@ -35,7 +35,7 @@ body {
 }
 
 .filters button,
-.catalog-item button {
+.catalog-item-price button {
   box-sizing: border-box;
   background-color: #000000;
   color: #ffffff;
@@ -211,6 +211,31 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.catalog-item-price {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.catalog-item-price b {
+ box-sizing: border-box;
+  width: 109px;
+  height: 43px;
+  margin-left: 17px;
+  background-color: #e5e5e5;
+  color: #000000;
+  text-align: center;
+  padding-top: 13px;
+}
+
+.catalog-item-price button {
+  width: 79px;
+  height: 43px;
+  margin-right: 17px;
+}
+
+
 
 .paginator {
   margin-left: 240px;
