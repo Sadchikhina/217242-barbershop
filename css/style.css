@@ -398,6 +398,18 @@ body {
   text-decoration: none;
 }
 
+.social-vk {
+  background: url("../img/vk.svg") 50% 50% no-repeat;
+}
+
+.social-fb {
+  background: url("../img/facebook.svg") 50% 50% no-repeat;
+}
+
+.social-instagram {
+  background: url("../img/instagram.svg") 50% 50% no-repeat;
+}
+
 .copyright {
   display: flex;
   flex-direction: column;
