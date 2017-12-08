@@ -157,7 +157,6 @@ body {
   position: absolute;
   top: 5px;
   left: 65px;
-
 }
 
 .breadscrumbs-menu .current {
@@ -192,6 +191,28 @@ body {
   margin-bottom: 21px;
 }
 
+.producer input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  top: -1px;
+  left: 0;
+}
+
+.producer input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 4px;
+
+}
+
 .goods-groups {
   margin-bottom: 30px;
 }
@@ -207,8 +228,8 @@ body {
 
 .producer input[type="checkbox"] + label,
 .goods-groups input[type="radio"] + label {
-  box-sizing: border-box;
   padding-left: 44px;
+  position: relative;
 }
 
 .filters button {
