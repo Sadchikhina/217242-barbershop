@@ -7,7 +7,111 @@ body {
 }
 
 .modal-login {
-  display: none;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  margin-top: -194px;
+  left: 50%;
+  margin-left: -230px;
+  width: 460px;
+  height: 386px;
+  background-color: #ffffff;
+}
+
+.identification::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -42px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/cross-grey.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.identification {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 79px;
+  padding-right: 80px;
+  text-transform: uppercase;
+}
+
+.modal-login .form-label {
+  font-size: 30px;
+  margin-bottom: 9px;
+  margin-left: 2px;
+}
+
+.identification p {
+  margin-bottom: 15px;
+  margin-left: 3px;
+}
+
+.identification input[type="text"],
+.identification input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  height: 43px;
+  border: 2px solid #000000;
+  padding-left: 15px;
+  outline: none;
+}
+
+.identification input[type="text"] {
+  margin-bottom: 9px;
+}
+
+.identification input[type="password"] {
+  margin-bottom: 17px;
+}
+
+.miscellaneous {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.miscellaneous input[type="checkbox"] + label {
+ padding-left: 32px;
+ position: relative;
+}
+
+.miscellaneous input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  top: -2px;
+  left: 0;
+}
+
+.miscellaneous input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 4px;
+}
+
+.forgetpass {
+  color: #000000;
+}
+
+.identification button {
+  width: 100%;
+  height: 43px;
+  padding: auto;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
 }
 
 .visually-hidden {
@@ -196,6 +300,7 @@ body {
   margin-bottom: 18px;
 }
 
+.miscellaneous input[type="checkbox"],
 .producer input[type="checkbox"],
 .goods-groups input[type="radio"] {
   display: none;
@@ -382,6 +487,7 @@ body {
 
 .catalog-footer {
   background-image: url("../img/background-footer.png");
+    box-shadow: inset 0 15px 20px 0 #000000;
 }
 
 .footer-flex-wrapper {
@@ -467,4 +573,34 @@ body {
   background-color: #000000;
   color: #ffffff;
   text-decoration: none;
+}
+
+.social-vk:hover,
+.social-vk:active {
+background-image: url("../img/vk-black.svg");
+background-color: #ffffff;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+}
+
+.social-fb:hover,
+.social-fb:active {
+background-image: url("../img/fb-black.svg");
+background-color: #ffffff;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+}
+
+.social-instagram:hover,
+.social-instagram:active {
+background-image: url("../img/instagram-black.svg");
+background-color: #ffffff;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+}
+
+.copyright a:hover,
+.copyright a:active {
+  background-color: #ffffff;
+  color: #000000;
 }
