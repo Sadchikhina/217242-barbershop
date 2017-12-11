@@ -42,6 +42,8 @@ body {
   text-transform: uppercase;
   padding: auto;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .page-header {
@@ -203,6 +205,12 @@ body {
 .goods-groups input[type="radio"] + label {
   padding-left: 44px;
   position: relative;
+  cursor: pointer;
+}
+
+.producer input[type="checkbox"]:hover + label,
+.goods-groups input[type="radio"]:hover + label {
+  color: #663d15;
 }
 
 .producer {
@@ -320,8 +328,6 @@ body {
   height: 43px;
   margin-right: 17px;
 }
-
-
 
 .paginator {
   margin-left: 240px;
