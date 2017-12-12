@@ -16,12 +16,16 @@ body {
   width: 460px;
   height: 386px;
   background-color: #ffffff;
+  display: none;
 }
 
-.identification::after {
-  content: "";
+.modal-show {
+  display: block;
+}
+
+.close {
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: -42px;
   width: 30px;
   height: 30px;
@@ -61,6 +65,11 @@ body {
   outline: none;
 }
 
+.identification input[type="text"]:focus,
+.identification input[type="password"]:focus {
+  border: 2px solid #663d15;
+}
+
 .identification input[type="text"] {
   margin-bottom: 9px;
 }
@@ -78,6 +87,7 @@ body {
 .miscellaneous input[type="checkbox"] + label {
  padding-left: 32px;
  position: relative;
+ cursor: pointer;
 }
 
 .miscellaneous input[type="checkbox"] + label::before {
@@ -112,6 +122,13 @@ body {
   background-color: #000000;
   color: #ffffff;
   border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.identification button:hover,
+.identification button:active {
+  background: #663d15;
 }
 
 .visually-hidden {
