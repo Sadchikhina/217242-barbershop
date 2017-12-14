@@ -149,6 +149,7 @@ body {
 }
 
 .catalog-main,
+.catalog-item-main,
 .footer-flex-wrapper {
   width: 940px;
   margin-left: auto;
