@@ -293,6 +293,17 @@ body {
   left: 65px;
 }
 
+.to-group::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #000000;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 5px;
+  left: 135px;
+}
+
 .breadscrumbs-menu .current {
   margin-right: 0;
   color: #aba9a7;
