@@ -142,6 +142,7 @@ body {
 .cite-navigation,
 .user-navigation,
 .breadscrumbs-menu,
+.complect-list,
 .social-list {
   list-style-type: none;
   padding: 0;
@@ -157,7 +158,8 @@ body {
 }
 
 .filters button,
-.catalog-item-price button {
+.catalog-item-price button,
+.description-price button {
   box-sizing: border-box;
   background-color: #000000;
   color: #ffffff;
@@ -255,7 +257,21 @@ body {
   margin-bottom: 52px;
 }
 
+.catalog-item-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 57px;
+}
+
 .catalog-header h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.catalog-item-header h1 {
   font-size: 30px;
   text-transform: uppercase;
   padding: 0;
@@ -453,7 +469,6 @@ body {
 
 .catalog-item-price {
   display: flex;
-  justify-content: center;
   margin-top: 14px;
 }
 
@@ -476,6 +491,7 @@ body {
 
 .item-flex-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .small-pic {
@@ -497,11 +513,67 @@ body {
   box-shadow: 0 0 17px 2px #d7d6d4;
 }
 
+.item-description {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.availability-flex-wrap {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.product-availability {
+  margin-right: 176px;
+}
+
+.product-article {
+  color: #aeaeae;
+}
+
+.product-description {
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+
+.description-price {
+  display: flex;
+  margin-bottom: 62px;
+}
+
+.description-price b {
+  box-sizing: border-box;
+  width: 109px;
+  height: 43px;
+  background-color: #e5e5e5;
+  color: #000000;
+  text-align: center;
+  padding-top: 13px;
+}
+
+.description-price button {
+  width: 79px;
+  height: 43px;
+}
+
+.item-description h3 {
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 17px;
+}
+
 .filters button:hover,
 .catalog-item-price button:hover,
+.description-price button:hover,
 .page:hover,
 .filters button:active,
 .catalog-item-price button:active,
+.description-price button:active,
 .page:active {
   background: #663d15;
 }
